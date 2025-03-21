@@ -28,7 +28,8 @@ db.connect((err) => {
 app.use(bodyParser.json());
 app.use(cors());
 
-// API endpoint to store transaction details
+
+// POST endpoint to store transaction details
 app.post('/api/stock-transaction', (req, res) => {
   const { stock_symbol, stock_name, quantity, stop_loss, total_cost, transaction_type } = req.body;
 
@@ -45,6 +46,18 @@ app.post('/api/stock-transaction', (req, res) => {
       return res.status(500).send('Error storing transaction');
     }
     res.status(200).send('Transaction stored successfully');
+  });
+});
+
+// ✅ Corrected GET endpoint to fetch transactions from stock_transactions
+app.get('/api/transactions', (req, res) => {
+  const query = 'SELECT * FROM stock_transactions ORDER BY id DESC';
+  db.query(query, (err, results) => {
+    if (err) {
+      console.error("Error fetching transactions:", err);
+      return res.status(500).send("Error fetching transactions");
+    }
+    res.status(200).json(results);
   });
 });
 
