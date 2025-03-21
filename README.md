@@ -45,3 +45,6 @@ Long-term investments (wealth-building and future security).
 ✅ AI Chatbot Assistance: The landing page features a chatbot that helps users resolve queries, get investment advice, and navigate the platform effortlessly.
 
 ![Screenshot 2025-03-21 200135](https://github.com/user-attachments/assets/0b3d0c9b-4fc8-45de-b01b-de9d6b5f639f)
+![Screenshot 2025-03-21 200155](https://github.com/user-attachments/assets/cb9af854-ea29-46da-98b8-34a065d15de2)
+![Screenshot 2025-03-21 200253](https://github.com/user-attachments/assets/4529c8b1-092c-417b-a2b3-fb8e6621e225)
+![Screenshot 2025-03-21 201907](https://github.com/user-attachments/assets/2fd2ba8e-630d-4c40-826f-a274abfecae7)
